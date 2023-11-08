@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} About me | Adrian Adame {% endblock title %}
+
+{% block content %}
+<section class="about-section">
+    <div class="img-container center">
+        <img src="{% static './img/pfp.jpg' %}" id="about-img">
+    </div>
+
+    <div class="description-container center">
+
+        <div class="center" style="flex-direction: column;">
+            <h1>Fullstack developer</h1>
+            <h2>Adrian Adame</h2>
+        </div>
+
+        <p>
+            Computer Engineer who likes to take new challenges, technology enthusiast and in my free times, gamer by heart. <br><br>
+
+            Hi! I'm specialized in Embedded Software development, recently doing as a Fullstack developer in Micro Precision Calibration Inc. helping building software that goes from python applications to automate equipment calibration procedures used daily by their technicians to building fully functional platforms to monitor relevant information required by calibration standards such as Humidty/Temperature and other variables.<br><br>
+            During my studies, I led some of the projects created for my subjects related to software development, applying traditional methodologies for small projects as well as agile for more complex projects. I stand out for my fast learning, taking new challenges and improving my projects through the use of best practices.
+        </p>
+
+        <div class="skills-list center">
+            <h2>Skills</h2>
+                <div class="skills center">
+                <label> C/C++ </label>
+                <label> Javascript </label>
+                <label> Python </label>
+                <label> Java </label>
+                <label> Django </label>
+                <label> Flask </label>
+                <label> React </label>
+                <label> Embedded Systems </label>
+                <label> Computer Architecture </label>
+                <label> Artificial Intelligence</label>
+                <label> Data Science </label>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
