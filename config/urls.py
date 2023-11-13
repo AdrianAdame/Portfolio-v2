@@ -22,9 +22,11 @@ from pages.views import (
     contact
 )
 
+
 urlpatterns = [
     path("", home, name = "home"),
     path("projects/", include('projects.urls')),
+    path("experiences/", include('experiences.urls')),
     path("contact/", contact, name="contact"),
     path('admin/', admin.site.urls),
 ]

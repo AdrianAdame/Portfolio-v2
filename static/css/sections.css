@@ -187,3 +187,25 @@ a p:nth-child(4), .experience-card p:nth-child(4){
 .primary-button:hover {
     background: linear-gradient(135deg, #7F66FF 0%, #AA99FF 100%);
 }
+
+/* ---- Manage section ----- */
+
+.manage-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.manage-section h2 {
+    margin: 1rem 0;
+}
+
+#project-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    height: 35rem;
+    justify-content: space-evenly;
+    width: 35rem;
+    padding: 3%;
+    border: 1px solid var(--secondary-color);
+}

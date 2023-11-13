@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} Experience {% endblock title %}
+
+{% block content %}
+<section class="experience-section center">
+    <h2>Experience / Education</h2>
+
+    <div id="experience-list">
+        {% for experience in experiences %}
+            <div class="experience-card">
+                <p>{{ experience.entity }}</p>
+                <p>{{ experience.title }}</p>
+                <p>{{ experience.description }}</p>
+                <p>{{ experience.period }}</p>
+                <div class="technologies center">
+                    {% for tech in experience.technologies.all %}
+                        <label>{{ tech.name }}</label>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock content %}
