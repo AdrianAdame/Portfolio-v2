@@ -15,4 +15,4 @@ class Experience(models.Model):
     technologies = models.ManyToManyField(Tech)
 
     def __str__(self):
-        return "%s - %s" % (self.entity, self.title)
+        return "%s at %s" % (self.title, self.entity)

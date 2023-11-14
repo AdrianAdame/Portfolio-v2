@@ -73,7 +73,7 @@
 }
 
 .technologies {
-    justify-content: center;
+    justify-content: flex-start;
     gap: 0.5rem;
     flex-wrap: wrap;
     margin-bottom: 0.5rem;
